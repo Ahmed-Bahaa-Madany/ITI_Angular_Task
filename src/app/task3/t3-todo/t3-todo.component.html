@@ -1,0 +1,9 @@
+<div class="bg-light" style="height: 100vh; color: black;">
+  <div class="container">
+      <app-header3 (messageEvent)="receiveMessage($event)"></app-header3>
+      <!-- <div *ngFor="let data of dataFromchild">
+
+      </div> -->
+      <app-body3 [dataFromParent]="dataFromchild"></app-body3>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+a{
+  text-decoration: none;
+}
+section.portfolio{
+  .content{
+    h1{
+      font-size: 60px;
+    }
+    .cards{
+      height: 300px;
+      div{
+        height: 5px;
+        width: 40%;
+      }
+    }
+  }
+}

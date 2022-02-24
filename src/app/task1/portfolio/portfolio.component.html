@@ -1,0 +1,25 @@
+<section class="portfolio py-5">
+  <div class="container">
+    <div class="content">
+      <h1 class="mb-5">Portfolio</h1>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let pro of portf">
+          <div class="cards d-flex justify-content-center align-items-center flex-column m-3"
+          [ngClass]="{'bg-dark': pro.value === 'dark','bg-secondary': pro.value === 'white'}">
+            <p class="fs-3 text-white ">{{pro.name}}</p>
+            <div class="bg-light"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let pro of portfol">
+          <div class="cards d-flex justify-content-center align-items-center flex-column m-3"
+          [ngClass]="{'bg-secondary': pro.value === 'white','bg-dark': pro.value === 'dark'}">
+            <p class="fs-3 text-white ">{{pro.name}}</p>
+            <p class="fs-3 text-white ">DEVELOPMENT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+<section class="skills bg-secondary py-5">
+  <div class="container">
+    <div class="content">
+      <div class="title text-center">
+        <h1 class="text-white fs-1 mb-3">Skills</h1>
+        <p class="text-white w-75 m-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quos non optio nsive blanditiis, deserunt quod
+          aliquid unde dolores quae perferendis ratione rerum, repudiandae natus voluptas eos. Dolorem cupiditate
+          minus similique! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem enim culpa molestias
+          ratione sapiente iste, reprehenderit minus eveniet, rem magnam dicta vero esse dolorum eius vitae numquam
+          quis ea nihil.</p>
+      </div>
+      <div class="info mt-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="txt w-75 mx-auto mt-5 pt-5">
+              <p class="text-white text-center fs-2">MY FOCUS</p>
+              <hr class="text-white m-2">
+              <p class="text-white fs-2">UI/UX DESIGN</p>
+              <p class="text-white fs-2">Responsive Design</p>
+              <p class="text-white fs-2">Web Design</p>
+              <p class="text-white fs-2">Mobial App Design</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="prog w-75" *ngFor="let skill of skillList">
+              <div class="prog-bar bg-white m-3 d-flex">
+                <div class="text-center bg-dark p-3 text-white w-25">{{ skill.name }}</div>
+                <div class="w-75">
+                  <div class="bg-success" [style]="skill.value"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
